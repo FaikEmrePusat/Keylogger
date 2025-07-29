@@ -1,0 +1,1 @@
+a    s    d    [Key.tab]   [Key.tab]   [Key.backspace]   [Key.backspace]   [Key.backspace]   [Key.backspace]   [Key.left]   [Key.left]   [Key.right]   [Key.right]   [Key.backspace]   [Key.left]   [Key.down]   [Key.down]   [Key.left]   [Key.left]   [Key.left]   [Key.right]   [Key.left]   [Key.right]   [Key.ctrl_l]       
