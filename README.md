@@ -33,18 +33,12 @@ python capture_screenshots.py
 
 > Not: Scriptler Windows ortamında ve masaüstü oturumu açıkken çalışacak şekilde tasarlanmıştır.
 
-## Dikkat
 
-- Bu araçlar yalnızca eğitim ve test amaçlıdır. İzinsiz kullanım yasalara aykırıdır!
-- Kendi bilgisayarınız dışında kullanmayınız.
+## Eklenecek Özellikler
 
-## Geliştirme Önerileri
-
-- Clipboard ve screenshot kayıtlarını da dosyaya yazacak şekilde geliştirin.
-- Tüm işlevleri tek bir ana scriptte thread olarak birleştirin.
-- Hata yönetimi ve loglama ekleyin.
-- Kayıt dosyalarını şifreleyin veya erişimi kısıtlayın.
+- Clipboard ve screenshot kayıtlarını da dosyaya yazma.
+- Tüm işlevler tek bir ana scriptte thread olarak birleştirilecek.
+- Hata yönetimi ve loglama eklenecek.
+- Kayıt dosyaları şifrelenecek veya erişimi kısıtlanacak.
 
 ---
-
-Herhangi bir sorunda veya katkı yapmak isterseniz iletişime geçebilirsiniz.
