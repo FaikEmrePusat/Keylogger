@@ -34,11 +34,5 @@ python capture_screenshots.py
 > Not: Scriptler Windows ortamında ve masaüstü oturumu açıkken çalışacak şekilde tasarlanmıştır.
 
 
-## Eklenecek Özellikler
-
-- Clipboard ve screenshot kayıtlarını da dosyaya yazma.
-- Tüm işlevler tek bir ana scriptte thread olarak birleştirilecek.
-- Hata yönetimi ve loglama eklenecek.
-- Kayıt dosyaları şifrelenecek veya erişimi kısıtlanacak.
-
----
+##Keylogger 2.0
+https://github.com/FaikEmrePusat/Keylogger/tree/keylogger_2.0
