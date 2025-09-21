@@ -4,10 +4,10 @@ A simple Python keylogger that captures keystrokes and sends them via email at r
 
 ## Features
 
-- 📝 Captures all keyboard input (letters, numbers, special keys)
-- 📧 Sends logs via Gmail at configurable intervals
-- 🔒 Uses TLS encryption for secure email transmission
-- ⚡ Lightweight and easy to use
+- Captures all keyboard input (letters, numbers, special keys)
+- Sends logs via Gmail at configurable intervals
+- Uses TLS encryption for secure email transmission
+- Lightweight and easy to use
 
 ## Requirements
 
@@ -61,4 +61,5 @@ In `run.py`, you can modify:
 
 - `Keylogger.py` - Main keylogger class
 - `run.py` - Configuration and execution script
+
 - `README.md` - This documentation
