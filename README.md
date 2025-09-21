@@ -1,44 +1,65 @@
-# Keylogger & Monitoring Tools
+# Keylogger
 
-Bu proje, klavye tuşlarını, panodaki (clipboard) değişiklikleri ve ekran görüntülerini kaydeden basit bir Python tabanlı izleme aracıdır.
+A simple Python keylogger that captures keystrokes and sends them via email at regular intervals.
 
-## Özellikler
+## Features
 
-- **Keylogger:** Tüm tuş vuruşlarını `logs/` klasörüne zaman damgalı dosyalara kaydeder.
-- **Clipboard Logger:** Panodaki değişiklikleri algılar ve (şu an sadece ekrana yazar, istenirse dosyaya kaydedilebilir).
-- **Screenshot Capture:** Her 10 saniyede bir ekran görüntüsü alır ve `screenshot/` klasörüne kaydeder.
+- Captures all keyboard input (letters, numbers, special keys)
+- Sends logs via Gmail at configurable intervals
+- Uses TLS encryption for secure email transmission
+- Lightweight and easy to use
 
-## Gereksinimler
+## Requirements
 
 - Python 3.x
-- Gerekli kütüphaneler:
-  - `pynput`
-  - `pyperclip`
-  - `Pillow`
+- Gmail account with 2-Step Verification enabled
+- Gmail App Password
 
-Kurmak için:
+## Installation
+
+1. Install required packages:
 ```bash
-pip install pynput pyperclip Pillow
+pip install pynput
 ```
 
-## Kullanım
+2. Clone or download the project files
 
-Her script bağımsız çalışır:
+## Setup
 
-```bash
-python logkeystokes.py
-python monitoring_clip_board.py
-python capture_screenshots.py
+1. Enable 2-Step Verification on your Gmail account
+2. Generate an App Password:
+   - Go to [Google Account Security](https://myaccount.google.com/security)
+   - Navigate to "App passwords"
+   - Create a new app password for "Mail"
+   - Copy the 16-character password
+
+3. Update `run.py` with your credentials:
+```python
+keylogger = Keylogger.Keylogger(15, "your-email@gmail.com", "your-app-password")
 ```
 
-> Not: Scriptler Windows ortamında ve masaüstü oturumu açıkken çalışacak şekilde tasarlanmıştır.
+## Usage
 
+Run the keylogger:
+```bash
+python run.py
+```
 
-## Eklenecek Özellikler
+The keylogger will:
+- Start capturing keystrokes immediately
+- Send the first email report right away
+- Continue sending reports every 15 seconds (configurable)
 
-- Clipboard ve screenshot kayıtlarını da dosyaya yazma.
-- Tüm işlevler tek bir ana scriptte thread olarak birleştirilecek.
-- Hata yönetimi ve loglama eklenecek.
-- Kayıt dosyaları şifrelenecek veya erişimi kısıtlanacak.
+## Configuration
 
----
+In `run.py`, you can modify:
+- **Time interval**: Change `15` to desired seconds between emails
+- **Email address**: Your Gmail address
+- **App password**: Your Gmail app password
+
+## Files
+
+- `Keylogger.py` - Main keylogger class
+- `run.py` - Configuration and execution script
+
+- `README.md` - This documentation
