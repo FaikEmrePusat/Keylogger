@@ -34,5 +34,6 @@ python capture_screenshots.py
 > Not: Scriptler Windows ortamında ve masaüstü oturumu açıkken çalışacak şekilde tasarlanmıştır.
 
 
-##Keylogger 2.0
+## Keylogger 2.0
+
 https://github.com/FaikEmrePusat/Keylogger/tree/keylogger_2.0
